@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>GCT Webdrive</title>
+    <link rel="stylesheet" href="upload_level.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h3>Upload Files</h3>
+        <div id="drop-area">
+            <p>Drag & drop file here or</p>
+            <input type="file" id="file-input" multiple>
+            <button onclick="document.getElementById('file-input').click()">Browse from device</button>
+            <button onclick="uploadFile()">Upload</button>
+        </div>
+        <ul id="file-list"></ul>
+    </div>
+
+    <script>
+        document.getElementById("drop-area").addEventListener("dragover", (event) => {
+            event.preventDefault();
+        });
+
+        document.getElementById("drop-area").addEventListener("drop", (event) => {
+            event.preventDefault();
+            handleFiles(event.dataTransfer.files);
+        });
+
+        document.getElementById("file-input").addEventListener("change", (event) => {
+            handleFiles(event.target.files);
+        });
+
+        function handleFiles(files) {
+            const fileList = document.getElementById("file-list");
+            fileList.innerHTML = "";
+
+            for (const file of files) {
+                let listItem = document.createElement("li");
+                listItem.textContent = file.name;
+                fileList.appendChild(listItem);
+            }
+        }
+        function uploadFile() {
+            alert("Success");
+        }
+    </script>
+</body>
+</html>
