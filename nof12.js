@@ -1,4 +1,4 @@
-```let devtoolsOpen = false;
+let devtoolsOpen = false;
 const urlParams = new URLSearchParams(window.location.search);
 const threshold = parseInt(urlParams.get('threshold')) || 200;
 const redirectUrl = urlParams.get('url') || 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
@@ -33,4 +33,4 @@ document.addEventListener("keydown", function (event) {
   ) {
       event.preventDefault();
   }
-});```
+});
