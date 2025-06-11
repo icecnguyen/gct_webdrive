@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>GCT Webdrive</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <nav>
         <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="browse_level.html">Browse Level</a></li>
             <li><a href="upload_level.html">Upload Level</a></li>
@@ -24,12 +25,12 @@
                     <input type="text" id="username" placeholder="Username" required><br>
                     <label for="password">Password</label>
                     <input type="password" id="password" placeholder="Password" required><br>
-                    <div style="margin-bottom: 15px;">
+                    <div class="submit_button">
                         <a href="register.html">Sign Up</a> | 
+                        <a href="change_password.html">Change Password</a><br>
                         <a href="forgot_password.html">Forgot Password?</a>
                     </div>
                     <button type="submit">Sign In</button>
-                    <button type="button" onclick="window.location.href='change_password.html'">Change Password</button>
                 </form>
             </td>
         </tr>

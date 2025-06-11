@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GCT Webdrive</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="css/icon.png">
+    <script src="js/level_link.js"></script>
 </head>
 <body>
     <nav>
         <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="browse_level.html">Browse Level</a></li>
             <li><a href="upload_level.html">Upload Level</a></li>
@@ -17,18 +19,40 @@
             <li><a href="https://youtube.com/@icecnguyen">Youtube</a></li>
         </ul>
     </nav>
-<h1>Top Level</h1>
-<div class="top_level">
-    <div class="level" onclick="window.open('https://www.youtube.com/watch?v=-XUL-SbDVMU&t=4s','_blank;')">
-        <img src="https://img.youtube.com/vi/-XUL-SbDVMU/maxresdefault.jpg">
-        <div class="play-button"></div>
-        <div class="video-title">ikaruga nex vs 影虎。 - Grabinschrift der Götter</div>
+    <div class="content-list">
+        <ul>
+            <li>
+                <h3>Grand Chart Team Custom</h3>
+            </li>
+            <li onclick="goToPage('gct_inferno.html')">1. Megasphere - Inferno</li>
+            <li onclick="goToPage('gct_birthdaysong.html')">2. Takehirotei - Birthday Song</li>
+            <li onclick="goToPage('gct_ccc.html')">3. Kanemiko - Comet Casting Capsule</li>
+        </ul>
+        <ul>
+            <li>
+                <h3>TeamVN Custom</h3>
+            </li>
+            <li onclick="goToPage('teamvn_crossingnote.html')">1. Plum - Crossing Note</li>
+            <li onclick="goToPage('teamvn_megamix2.html')">2. Plum - Megamix 2</li>
+            <li onclick="goToPage('teamvn_machinegun.html')">3. かめりあ - We Could Get More Machinegun Psystyle!</li>
+        </ul>
+        <ul>
+            <li>
+                <h3>icecnguyen Custom</h3>
+            </li>
+            <li onclick="goToPage('ice_flowerrocket.html')">1. Plum - Flower  (No Effect)</li>
+            <li onclick="goToPage('ice_rallhold.html')">2. Plum - R (All Hold)</li>
+            <li onclick="goToPage('ice_stardroptear.html')">3. Plum - Stardrop Tear (No Effect)</li>
+            <li onclick="goToPage('ice_cthulhuex.html')">4. Raimukun - C†hulhu (Ex)</li>
+            <li onclick="goToPage('ice_inferno.html')">5.Megasphere - Inferno (Effect)</li>
+            <li onclick="goToPage('ice_kaleidoscope.html')">6.Plum - Kaleeidoscope (Renew 2024)</li>
+            <li onclick="goToPage('ice_immortalscream.html')">7. かめりあ - [The] Immortal Scream (No Effect)</li>
+            <li onclick="goToPage('ice_maximumblaster.html')">8.seatrus - M A X I M U M B L A S T E R (Unfix) (No Effect)</li>
+            <li onclick="goToPage('ice_maximumblasterfix.html')">9.seatrus - M A X I M U M B L A S T E R (Fixed) (No Effect)</li>
+            <li onclick="goToPage('ice_dergotter.html')">10.ikaruga nex vs 影虎。 - Grabinschrift der Götter (No Effect)</li>
+            <li onclick="goToPage('ice_dergottervfx.html')">11.ikaruga nex vs 影虎。 - Grabinschrift der Götter (Full Effect)</li>
+        </ul>
     </div>
-    <div class="level" onclick="window.open('https://www.youtube.com/watch?v=FsO2vdpD2SE', '_blank')">
-        <img src="https://img.youtube.com/vi/FsO2vdpD2SE/maxresdefault.jpg" alt="Thumbnail">
-        <div class="play-button"></div>
-        <div class="video-title">かめりあ - Hello (BPM) 2025</div>
-    </div>
-</div>
+
 </body>
 </html>
